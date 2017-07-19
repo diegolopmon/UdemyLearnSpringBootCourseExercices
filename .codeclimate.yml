@@ -1,0 +1,15 @@
+engines:
+  pmd:
+    enabled: true
+    channel: "beta"
+  checkstyle:
+    enabled: true
+    channel: "beta"
+  fixme:
+    enabled: true
+
+ratings:
+  paths:
+  - WebServices/src/**
+exclude_paths:
+- spec/**/*
