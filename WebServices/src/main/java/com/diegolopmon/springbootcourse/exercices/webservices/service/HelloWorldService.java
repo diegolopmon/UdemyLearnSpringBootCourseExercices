@@ -1,6 +1,6 @@
-package com.diegolopmon.springbootcourse.exercices.webServices.service;
+package com.diegolopmon.springbootcourse.exercices.webservices.service;
 
-import com.diegolopmon.springbootcourse.exercices.webServices.configuration.HelloConfiguration;
+import com.diegolopmon.springbootcourse.exercices.webservices.configuration.HelloConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,6 @@
-package com.diegolopmon.springbootcourse.exercices.webServices.controller;
+package com.diegolopmon.springbootcourse.exercices.webservices.controller;
 
-import com.diegolopmon.springbootcourse.exercices.webServices.service.HelloWorldService;
+import com.diegolopmon.springbootcourse.exercices.webservices.service.HelloWorldService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,16 +21,26 @@ public class MainController {
 
     @RequestMapping("/controller1")
     public String controller1(
-            @RequestParam(value = "parameter", required = false, defaultValue = "No param") String parameter,
-            Model model) {
+            @RequestParam(value = "parameter", defaultValue = "No param") String parameter,
+            Model model) throws Exception {
+
+        if(parameter.equals("exception")){
+            throw new Exception("Exception launched");
+        }
+
         model.addAttribute("parameter", parameter);
         return "controller1";
     }
 
     @RequestMapping("/controller2")
     public String controller2(
-            @RequestParam(value = "parameter", required = false, defaultValue = "No param") String parameter,
-            Model model) {
+            @RequestParam(value = "parameter", defaultValue = "No param") String parameter,
+            Model model) throws Exception {
+
+        if(parameter.equals("exception")){
+            throw new Exception("Exception launched");
+        }
+
         model.addAttribute("parameter", parameter);
         return "controller2";
     }

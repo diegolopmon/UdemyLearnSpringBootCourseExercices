@@ -1,4 +1,4 @@
-package com.diegolopmon.springbootcourse.exercices.webServices.configuration;
+package com.diegolopmon.springbootcourse.exercices.webservices.configuration;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
@@ -19,8 +19,10 @@ public class HelloConfiguration {
 
     @Override
     public String toString() {
-        return "HelloConfiguration{" +
-                "name='" + name + '\'' +
-                '}';
+        return "HelloConfiguration{"
+                + "name='"
+                + name
+                + '\''
+                + '}';
     }
 }

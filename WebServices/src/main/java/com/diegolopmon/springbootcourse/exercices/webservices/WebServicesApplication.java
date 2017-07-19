@@ -1,4 +1,4 @@
-package com.diegolopmon.springbootcourse.exercices.webServices;
+package com.diegolopmon.springbootcourse.exercices.webservices;
 
 
 import org.springframework.boot.SpringApplication;

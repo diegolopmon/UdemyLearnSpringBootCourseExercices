@@ -1,4 +1,4 @@
-package com.diegolopmon.springbootcourse.exercices.webServices;
+package com.diegolopmon.springbootcourse.exercices.webservices;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
