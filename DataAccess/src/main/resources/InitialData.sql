@@ -1,0 +1,2 @@
+INSERT INTO author(id,first_name,last_name) VALUES (1,'Diego','Lopez');
+INSERT INTO post(id,title,body,author_id,posted_on) VALUES (1,'My very first post','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',1,CURRENT_DATE());
