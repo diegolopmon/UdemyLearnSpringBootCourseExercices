@@ -20,4 +20,8 @@ public class PostService {
     public List<Post> list() {
         return postRepository.findAllByOrderByPostedOnDesc();
     }
+
+    public Post getLatest() {
+        return postRepository.findFirstByOrderByPostedOnDesc();
+    }
 }
