@@ -12,5 +12,4 @@ public class DataAccessApplicationTests {
 	@Test
 	public void contextLoads() {
 	}
-
 }
