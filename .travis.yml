@@ -1,3 +1,12 @@
 language: java
 jdk:
   - oraclejdk8
+env:
+  global:
+    - CC_TEST_REPORTER_ID=182438415d9a1a572967d38455e989d2b4f46a52ebf60a681222cde0f875db80
+    - GIT_COMMITTED_AT=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then git log -1 --pretty=format:%ct; else git log -1 --skip 1 --pretty=format:%ct; fi)
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+script:
+  - bundle exec rspec
