@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+      layout:decorator="layouts/main">
 <head>
-    <!-- CSS -->
-    <link href="webjars/bootstrap/3.3.7-1/css/bootstrap.min.css" rel="stylesheet"/>
-
-    <!-- Javascript -->
-    <script src="webjars/jquery/1.11.1/jquery.min.js" type="application/javascript"/>
-
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Hello Security</title>
 </head>
 <body>
-    <p th:text="${message}" />
+    <div layout:fragment="content">
+        <p th:text="${message}" />
+    </div>
 </body>
 </html>

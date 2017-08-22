@@ -13,7 +13,7 @@ public class SecurityController {
         return "home";
     }
 
-    @RequestMapping("/admin/portal")
+    @RequestMapping("/admin")
     public String admin(Model model) {
         model.addAttribute("message", "Admin portal");
         return "home";
