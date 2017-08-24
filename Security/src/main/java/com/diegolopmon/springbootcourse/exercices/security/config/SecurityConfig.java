@@ -16,11 +16,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     public void configureAuth(AuthenticationManagerBuilder authenticationManagerBuilder) throws Exception{
         authenticationManagerBuilder
                 .inMemoryAuthentication()
-                .withUser("inmemory").password("password").roles("inmemory")
+                .withUser("inmemory@email.com").password("password").roles("inmemory")
         .and()
-                .withUser("diego").password("diegopassword").roles("user")
+                .withUser("diego@email.com").password("diegopassword").roles("user")
         .and()
-                .withUser("admin").password("admin").roles("admin");
+                .withUser("admin@email.com").password("admin").roles("admin");
     }
 
     @Override
