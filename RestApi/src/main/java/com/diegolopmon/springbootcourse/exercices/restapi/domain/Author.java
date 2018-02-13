@@ -15,8 +15,7 @@ public class Author {
     private String firstName;
     private String lastName;
 
-    @OneToMany( mappedBy = "author" )
-    private List<Book> books;
+    public Author() {}
 
     public Author(String firstName, String lastName) {
         this.firstName = firstName;
@@ -37,14 +36,6 @@ public class Author {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }
-
-    public List<Book> getPosts() {
-        return books;
-    }
-
-    public void setPosts(List<Book> posts) {
-        this.books = books;
     }
 
     @Override
