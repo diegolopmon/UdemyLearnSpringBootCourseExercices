@@ -1,0 +1,118 @@
+{
+	"variables": [],
+	"info": {
+		"name": "UdemySpringBootCourseRestExercice",
+		"_postman_id": "2036c062-3ee6-2171-4555-ceaeb24dcea3",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Books",
+			"description": "",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"url": "http://localhost:8080/books/",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"url": "http://localhost:8080/books/",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"FOO\",\n    \"author\": {\n        \"firstName\": \"FOO2\",\n        \"lastName\": \"FOO3\"\n    }\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"url": "http://localhost:8080/books/2",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"BAR5\",\n    \"author\": {\n        \"firstName\": \"BAR2\",\n        \"lastName\": \"BAR3\"\n    }\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"url": "http://localhost:8080/books/1",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authors",
+			"description": "",
+			"item": [
+				{
+					"name": "Search",
+					"request": {
+						"url": {
+							"raw": "http://localhost:8080/authors/search/findByFirstNameContaining/?firstName=FOO2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"authors",
+								"search",
+								"findByFirstNameContaining",
+								""
+							],
+							"query": [
+								{
+									"key": "firstName",
+									"value": "FOO2",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
